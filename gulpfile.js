@@ -66,7 +66,7 @@ gulp.task('css', function() {
 gulp.task('lint', function() {
   return gulp.src(config.paths.js)
     .pipe(lint())
-    .pipe(lint.format())
+    .pipe(lint.format());
 });
 
 gulp.task('watch', function() {
